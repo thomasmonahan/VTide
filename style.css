@@ -10,23 +10,37 @@ body {
     color: #fff;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 header {
     background-color: #0f4c75; /* Dark blue */
     padding: 10px 0;
 }
 
-header h1 {
-    font-size: 2rem;
+.container {
+    display: flex;
+    justify-content: space-between; /* Align items evenly */
+    align-items: center;
+}
+
+.logo {
+    display: flex; /* Ensure logo and text are aligned horizontally */
+    align-items: center;
+}
+
+.oxswot-logo {
+    width: 300px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add some spacing between the logo and the title */
+}
+
+h1 {
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin: 0; /* Remove default margin */
 }
 
 nav ul {
     list-style: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 nav ul li {
@@ -38,12 +52,18 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+#hero .container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center;
+    text-align: center;
+}
 
 #hero {
-    background-image: url('satellite-image.jpg'); /* Replace with your satellite image */
+    background-image: url('swot_image_for_website.png'); /* Replace with your satellite image */
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,8 +71,10 @@ nav ul li a {
 }
 
 #hero h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
+    color: rgba(255, 255, 255, 1); /* Default text color with opacity (white) */
+    mix-blend-mode: difference;
 }
 
 .btn {
@@ -66,4 +88,8 @@ nav ul li a {
 
 .btn:hover {
     background-color: #0f4c75;
+}
+
+footer {
+    background-color:rgba(255, 255, 255, 1);
 }
