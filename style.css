@@ -36,22 +36,31 @@ h1 {
     font-size: 1.5rem; /* Adjust size as needed */
     margin: 0; /* Remove default margin */
 }
+/* Navigation */
+nav {
+    margin-left: 20px; /* Add space between logo and navigation */
+}
 
 nav ul {
-    list-style: none;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    margin: 45px;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 20px; /* Add space between navigation items */
+    margin-top: 20px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
+    font-size: 24px; /* Adjust font size as needed */
 }
+
+
+
 #hero .container {
     display: flex;
     flex-direction: column; /* Align items vertically */
@@ -92,4 +101,151 @@ nav ul li a {
 
 footer {
     background-color:rgba(255, 255, 255, 1);
+}
+
+/* Grid layout */
+.corrections-grid {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to the next line if they exceed the container width */
+    justify-content: center; /* Center-align items */
+}
+
+/* Individual grid item */
+.corrections-item {
+    width: 960px; /* Set width of each item */
+    margin: 10px; /* Add margin for spacing */
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items at the start of the cross axis (vertically) */
+}
+
+/* Image within grid item */
+.corrections-item img {
+    width: 480px; /* Set width of image */
+    height: Auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between image and text */
+}
+
+/* Text content within grid item */
+.corrections-item-content {
+    flex-grow: 1; /* Allow text content to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Adjusting pixel sizes for other features */
+.corrections-item h4 {
+    font-size: 30px; /* Set the font size for the titles */
+    margin: 0; /* Remove default margin */
+    align-self: flex-start; /* Align title to the top */
+}
+
+.corrections-item p {
+    font-size: 14px; /* Set the font size for the details */
+    margin-bottom: 8px; /* Add margin to separate each detail */
+}
+
+/* Aligning headers for regional and global corrections */
+.corrections-section h3 {
+    text-align: center; /* Center-align the headers */
+    margin-bottom: 20px; /* Add margin for spacing */
+    font-size: 50px;
+}
+
+/* Divider line */
+.divider {
+    width: 1px; /* Set the width of the vertical line */
+    background-color: #ccc; /* Set the color of the line */
+    height: 100%; /* Set the height to match the container height */
+    margin: 0 auto; /* Center the line horizontally */
+}
+
+/* Ensure container stretches to full width */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Ensure both sections have equal width */
+.corrections-section {
+    flex: 1;
+    margin: 0 10px; /* Adjust margin between sections */
+    font-size: 14px;
+}
+
+/* Download button */
+.download-button {
+    padding: 8px 16px; /* Add padding */
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Coming soon section */
+.coming-soon {
+    text-align: center;
+}
+
+.coming-soon h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.coming-soon p {
+    margin-bottom: 20px;
+}
+
+.coming-soon form {
+    display: flex;
+    justify-content: center;
+}
+
+.coming-soon input[type="email"],
+.coming-soon button {
+    padding: 10px 20px;
+}
+
+.coming-soon input[type="email"] {
+    margin-right: 10px;
+}
+
+.coming-soon button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.coming-soon button:hover {
+    background-color: #0056b3;
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button-style anchor element */
+.signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
 }
