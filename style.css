@@ -59,8 +59,6 @@ nav ul li a {
     font-size: 24px; /* Adjust font size as needed */
 }
 
-
-
 #hero .container {
     display: flex;
     flex-direction: column; /* Align items vertically */
@@ -112,7 +110,8 @@ footer {
 
 /* Individual grid item */
 .corrections-item {
-    width: 960px; /* Set width of each item */
+    width: 100%; /* Set width of each item to 100% initially */
+    max-width: 960px; /* Set max width */
     margin: 10px; /* Add margin for spacing */
     display: flex; /* Use flexbox for layout */
     align-items: flex-start; /* Align items at the start of the cross axis (vertically) */
@@ -120,8 +119,8 @@ footer {
 
 /* Image within grid item */
 .corrections-item img {
-    width: 480px; /* Set width of image */
-    height: Auto; /* Maintain aspect ratio */
+    width: 100%; /* Set image width to 100% */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Add spacing between image and text */
 }
 
@@ -165,6 +164,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 /* Ensure both sections have equal width */
@@ -248,4 +248,21 @@ footer {
 
 .signup-button:hover {
     background-color: #0056b3;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Change to column layout */
+    }
+
+    .corrections-item {
+        width: 100%; /* Set width of each item to 100% */
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    .corrections-item img {
+        width: 100%; /* Set image width to 100% */
+        margin-right: 0; /* Remove margin between image and text */
+    }
 }
