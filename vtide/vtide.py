@@ -55,7 +55,8 @@ class VTide:
     >>> df = pd.DataFrame({'observations':tide}, index = times)
     >>> model = VTide(df, lat = 44.9062, lon = -66.996201)
     >>> model.Solve()
-    >>> model.Predict()
+    >>> model.Predict(test_times)
+    >>> harmonics = model.harmonics
     """
     def __init__(self, ts, lat, lon):
       self.ts = ts # time series
@@ -333,7 +334,7 @@ class VTide:
         
         Parameters
         ----------
-        test_times: list or array
+        test_times: list or array or dataframe with datetime index
             timestamps to generate tidal predictions
 
         Returns
@@ -348,7 +349,8 @@ class VTide:
             self.fit_params
         except:
             raise AttributeError("Model has not been fit yet, call Solve() first before predicting")
-        
+        if isinstance(test_times, (pd.DataFrame, pd.Series)):
+            test_times = test_times.index
         xte = self.Prepare_Matrix(test_times, np.ones(len(test_times)))
         xte = np.matrix(xte)
         nnew = np.shape(xte)[0]
