@@ -1,4 +1,4 @@
-A Python implementation of . The method is an extension of the response method created by Munk and Cartwright in: 'Tidal Spectroscopy and Prediction'. RTide can be used for conventional tidal analysis and prediction, and is well suited to problems involving non-stationary contamination such as tidal rivers, and meteorological forcing. 
+A Python implementation of the variational Bayesian harmonic analysis proposed in https://doi.org/10.22541/essoar.172072179.92243659/v1. 
 
 # Installation
 ```
