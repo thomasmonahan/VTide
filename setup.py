@@ -15,10 +15,7 @@ setup(
         'pandas',
         'utide',
         'scipy',
-        'matplotlib.pylot',
-        'sys',
-        'pdb'
-
+        'matplotlib',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
