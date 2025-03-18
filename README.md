@@ -1,4 +1,4 @@
-A Python implementation of the variational Bayesian harmonic analysis proposed in https://doi.org/10.22541/essoar.172072179.92243659/v1. 
+A Python implementation of the variational Bayesian harmonic analysis proposed in https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024JC021533. 
 
 # Installation
 ```
