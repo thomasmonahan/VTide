@@ -37,6 +37,18 @@ Constituents and confidence intervals can quickly be visualized by calling:
 model.Visualize_Constituents()
 ```
 
+# Citing VTide
+Bibtex:
+```
+@article{monahan2025tidal,
+  title={Tidal corrections from and for SWOT using a spatially coherent variational Bayesian harmonic analysis},
+  author={Monahan, T and Tang, T and Roberts, S and Adcock, T},
+  journal={Journal of Geophysical Research: Oceans},
+  year={2025},
+  publisher={American Geophysical Union}
+}
+```
+
 
 
 
