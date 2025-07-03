@@ -34,7 +34,7 @@ phase_uncertainty = [consts[const]['phase_uncert'] for const in consts]
 ```
 Constituents and confidence intervals can quickly be visualized by calling:
 ```
-model.Visualize_Constituents()
+model.Plot_Constituents()
 ```
 
 # Citing VTide
