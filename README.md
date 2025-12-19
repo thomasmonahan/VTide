@@ -1,5 +1,7 @@
 A Python implementation of the variational Bayesian harmonic analysis proposed in https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024JC021533. 
 
+**Package in the process of being updated, please use the latest version of the repository for most up to date version of package. 
+
 # Installation
 ```
 pip install vtide
